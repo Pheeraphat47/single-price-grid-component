@@ -1,2 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:hsl(204, 43%, 93%);
+}
+
+.container{
+    max-width: 60rem;    
+}
+
+.wrapper{
+    display: grid;
+    border-radius: 10px;
+    overflow: hidden;  /* hide elements radius */
+    background-color: white;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "box1 box1" "box2 box3" ;
+    margin: 2rem 1rem;
+}
+
+.box {
+    padding: 2.5rem;
+}
+
+.main-content{
+    grid-area: box1;
+}
+
+.sub{
+    grid-area: box2;
+    background-color: hsl(179, 62%, 43%);
+}
+
+.whyus{
+    grid-area: box3;
+    background-color: hsl(179, 62%, 48%);
+}
+
+h1{
+    color: hsl(179, 62%, 43%);
+    font-size: 1.625rem;
+    padding-bottom: 1.25rem;
+}
+
+h3{
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 0.75rem;
+}
+
+.main-content p{
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5;
+}
+
+h2{
+    color: white;
+    font-size: 1.25rem;
+    padding-bottom: 0.938rem;
+}
+
+h5{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.625rem;
+}
+
+h5 span.price{
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding-right: 0.625rem;
+}
+
+h5 span{
+    color: hsl(204, 43%, 85%);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+
+.sub p {
+    color: white;
+}
+
+.sub a{
+    display: block;
+    text-align: center;
+    background-color:  hsl(71, 73%, 54%);
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 0.813rem;
+    padding: 0.75rem 0;
+    border-radius: 4px;
+    margin-top: 1.875rem;
+    font-size: 1rem;
+}
+
+
+.whyus h2{
+    padding-bottom: 1.25rem;
+}
+
+
+.whyus ul{
+    list-style: none;           
+}
+
+.whyus li {
+    color: white;
+    padding-bottom: 0.25rem;
+    opacity: 0.7;    
+}
+
+@media only screen and (max-width: 425px) {
+
+    .wrapper{
+        grid-template-columns: 100%;
+        grid-template-areas: "box1" "box2" "box3";
+    }
+
+    .box{
+        padding: 1.875rem;
+    }
+    
+}
 
