@@ -1,31 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:hsl(204, 43%, 93%);
+    background-color: hsl(204, 43%, 93%);
 }
 
-.container{
-    max-width: 60rem;    
+.container {
+    max-width: 60rem;
 }
 
-.wrapper{
+.wrapper {
     display: grid;
     border-radius: 10px;
-    overflow: hidden;  /* hide elements radius */
+    overflow: hidden;
+    /* hide elements radius */
     background-color: white;
     grid-template-columns: 50% 50%;
-    grid-template-areas: "box1 box1" "box2 box3" ;
+    grid-template-areas: "box1 box1" "box2 box3";
     margin: 2rem 1rem;
 }
 
@@ -33,59 +34,65 @@ body{
     padding: 2.5rem;
 }
 
-.main-content{
+.main-content {
     grid-area: box1;
 }
 
-.sub{
+.sub {
     grid-area: box2;
     background-color: hsl(179, 62%, 43%);
 }
 
-.whyus{
+.whyus {
     grid-area: box3;
     background-color: hsl(179, 62%, 48%);
 }
 
-h1{
+h1 {
     color: hsl(179, 62%, 43%);
     font-size: 1.625rem;
     padding-bottom: 1.25rem;
 }
 
-h2{
+h2 {
     color: hsl(71, 73%, 54%);
     padding-bottom: 0.75rem;
 }
 
-.main-content p{
+.main-content p {
     color: hsl(218, 22%, 67%);
     line-height: 1.5;
 }
 
-h3{
+h3 {
     color: white;
     font-size: 1.25rem;
     padding-bottom: 0.938rem;
 }
 
-h5{
+h4 {
     display: flex;
     align-items: center;
     padding-bottom: 0.625rem;
 }
 
-h5 span.price{
+h4 span.price {
     color: white;
     font-size: 1.75rem;
     font-weight: 700;
     padding-right: 0.625rem;
 }
 
-h5 span{
+h4 span {
     color: hsl(204, 43%, 85%);
     font-weight: 400;
     font-size: 1.1rem;
+}
+
+h5 {
+    color: white;
+    font-size: 1.25rem;
+    padding-bottom: 0.938rem;
 }
 
 
@@ -93,10 +100,10 @@ h5 span{
     color: white;
 }
 
-.sub a{
+.sub a {
     display: block;
     text-align: center;
-    background-color:  hsl(71, 73%, 54%);
+    background-color: hsl(71, 73%, 54%);
     text-decoration: none;
     color: white;
     font-weight: 700;
@@ -108,31 +115,30 @@ h5 span{
 }
 
 
-.whyus h2{
+.whyus h2 {
     padding-bottom: 1.25rem;
 }
 
 
-.whyus ul{
-    list-style: none;           
+.whyus ul {
+    list-style: none;
 }
 
 .whyus li {
     color: white;
     padding-bottom: 0.25rem;
-    opacity: 0.7;    
+    opacity: 0.7;
 }
 
 @media only screen and (max-width: 425px) {
 
-    .wrapper{
+    .wrapper {
         grid-template-columns: 100%;
         grid-template-areas: "box1" "box2" "box3";
     }
 
-    .box{
+    .box {
         padding: 1.875rem;
     }
-    
-}
 
+}
